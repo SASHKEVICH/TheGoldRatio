@@ -1,0 +1,14 @@
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.exe
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.deps.json
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.runtimeconfig.json
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.runtimeconfig.dev.json
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.dll
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\bin\Debug\netcoreapp3.1\TheGoldRatio.pdb
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.csproj.AssemblyReference.cache
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.AssemblyInfoInputs.cache
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.AssemblyInfo.cs
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.csproj.CoreCompileInputs.cache
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.dll
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.pdb
+C:\Users\apple\Desktop\Code\C#\TheGoldRatio\TheGoldRatio\TheGoldRatio\obj\Debug\netcoreapp3.1\TheGoldRatio.genruntimeconfig.cache
