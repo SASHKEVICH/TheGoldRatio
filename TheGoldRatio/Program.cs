@@ -28,7 +28,7 @@ namespace TheGoldRatio
 
     class GoldRatio
     {
-        private const double fi = 1.6180;
+        private const double fi = 1.618;
         
         static double MainFunction(double x)
         {
