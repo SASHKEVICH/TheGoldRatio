@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apple\\Desktop\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {}
+    "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apple\\Desktop\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {
+    "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apple\\Desktop\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
+        "projectUniqueName": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
         "projectName": "TheGoldRatio",
-        "projectPath": "C:\\Users\\apple\\Desktop\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
+        "projectPath": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
         "packagesPath": "C:\\Users\\apple\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apple\\Desktop\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\obj\\",
+        "outputPath": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

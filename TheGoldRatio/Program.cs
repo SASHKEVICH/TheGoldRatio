@@ -5,89 +5,47 @@ namespace TheGoldRatio
 {
     class Program
     {
+        private static double LeftBound;
+        private static double RightBound;
+        private static double eps;
+        
         static void Main(string[] args)
         {
-            double leftBound;
-            double rightBound;
-            double eps;
-            
-            Console.Write("Введите левую границу: ");
-            leftBound = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Введите правую границу: ");
-            rightBound = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.Write("Введите погрешность: ");
-            eps = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            setBounds();
+            GoldRatio GRSolver = new GoldRatio(LeftBound, RightBound, eps);
 
-            double minResult = GoldRatio.FindMin(leftBound, rightBound, eps);
-            double maxResult = GoldRatio.FindMax(leftBound, rightBound, eps);
+            double GRminimum = GRSolver.FindMin(Func1);
+            Console.WriteLine($"Минимум искомой функции = {GRminimum}.");
+            Console.WriteLine($"Значение минимума искомой функции = {Func1(GRminimum)}.");
             
-            Console.WriteLine($"Наименьшее значение функции = {minResult}");
-            Console.WriteLine($"Наибольшее значение функции = {maxResult}");
+            setBounds();
+            Fibonachhi FBSolver = new Fibonachhi(LeftBound, RightBound, eps);
+            
+            double FBminimum = FBSolver.FindMin(Func2);
+            Console.WriteLine($"Минимум искомой функции = {FBminimum}.");
+            Console.WriteLine($"Значение минимума искомой функции = {Func2(FBminimum)}.");
+            
         }
-    }
-
-    class GoldRatio
-    {
-        private const double fi = 1.618;
         
-        static double MainFunction(double x)
+        private static double Func1(double x)
         {
             return Math.Pow(x, 2) - 9;
         }
         
-        public static double FindMin(double leftBound, double rightBound, double eps)
+        private static double Func2(double x)
         {
-            while(true)
-            {
-                double x1 = rightBound - (rightBound - leftBound) / fi;
-                double x2 = leftBound + (rightBound - leftBound) / fi;
-
-                double y1 = MainFunction(x1);
-                double y2 = MainFunction(x2);
-
-                if (y1 >= y2)
-                {
-                    leftBound = x1;
-                }
-                else
-                {
-                    rightBound = x2;
-                }
-
-                if (Math.Abs(rightBound - leftBound) < eps)
-                {
-                    break;
-                }
-            }
-
-            return MainFunction((leftBound + rightBound) / 2);
+            return Math.Pow(x - 3, 2) + 4;
         }
-        public static double FindMax(double leftBound, double rightBound, double eps)
+
+        private static void setBounds()
         {
-            while(true)
-            {
-                double x1 = rightBound - (rightBound - leftBound) / fi;
-                double x2 = leftBound + (rightBound - leftBound) / fi;
-
-                double y1 = MainFunction(x1);
-                double y2 = MainFunction(x2);
-
-                if (y1 <= y2)
-                {
-                    leftBound = x1;
-                }
-                else
-                {
-                    rightBound = x2;
-                }
-
-                if (Math.Abs(rightBound - leftBound) < eps)
-                {
-                    break;
-                }
-            }
-
-            return MainFunction((leftBound + rightBound) / 2);
+            Console.Write("Введите левую границу: ");
+            LeftBound = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Введите правую границу: ");
+            RightBound = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Введите погрешность: ");
+            eps = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         }
+
     }
 }
