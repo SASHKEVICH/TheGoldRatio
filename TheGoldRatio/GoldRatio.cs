@@ -49,7 +49,7 @@ namespace TheGoldRatio
                 }
             }
 
-            return func((LeftBound + RightBound) / 2);
+            return (LeftBound + RightBound) / 2;
         }
         
         public double FindMax(Func<double, double> func)
@@ -78,7 +78,7 @@ namespace TheGoldRatio
                 }
             }
 
-            return func((LeftBound + RightBound) / 2);
+            return (LeftBound + RightBound) / 2;
         }
     }
 }
