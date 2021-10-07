@@ -4,18 +4,18 @@ namespace TheGoldRatio
 {
     public class GoldRatio
     {
-        private const double fi = 1.618;
-        protected int CounterIteration;
-        protected double LeftBound;
-        protected double RightBound;
-        protected double eps;
+        private const double _FI = 1.618;
+        protected int _counterIteration;
+        protected double _leftBound;
+        protected double _rightBound;
+        protected double _eps;
         
         public GoldRatio() {}
         public GoldRatio(double leftBound, double rightBound, double eps)
         {
-            LeftBound = leftBound;
-            RightBound = rightBound;
-            this.eps = eps;
+            this._leftBound = leftBound;
+            this._rightBound = rightBound;
+            this._eps = eps;
         }
 
         /// <summary>
@@ -25,60 +25,25 @@ namespace TheGoldRatio
         /// <returns></returns>
         public virtual double FindMin(Func<double, double> func)
         {
-            while(true)
+            while(Math.Abs(_rightBound - _leftBound) > _eps)
             {
-                CounterIteration++;
-                double x1 = RightBound - (RightBound - LeftBound) / fi;
-                double x2 = LeftBound + (RightBound - LeftBound) / fi;
+                double x1 = _rightBound - (_rightBound - _leftBound) / _FI;
+                double x2 = _leftBound + (_rightBound - _leftBound) / _FI;
 
                 double y1 = func(x1);
                 double y2 = func(x2);
 
                 if (y1 >= y2)
                 {
-                    LeftBound = x1;
+                    _leftBound = x1;
                 }
                 else
                 {
-                    RightBound = x2;
-                }
-
-                if (Math.Abs(RightBound - LeftBound) < eps)
-                {
-                    break;
+                    _rightBound = x2;
                 }
             }
 
-            return func((LeftBound + RightBound) / 2);
-        }
-        
-        public double FindMax(Func<double, double> func)
-        {
-            while(true)
-            {
-                CounterIteration++;
-                double x1 = RightBound - (RightBound - LeftBound) / fi;
-                double x2 = LeftBound + (RightBound - LeftBound) / fi;
-
-                double y1 = func(x1);
-                double y2 = func(x2);
-
-                if (y1 <= y2)
-                {
-                    LeftBound = x1;
-                }
-                else
-                {
-                    RightBound = x2;
-                }
-
-                if (Math.Abs(RightBound - LeftBound) < eps)
-                {
-                    break;
-                }
-            }
-
-            return func((LeftBound + RightBound) / 2);
+            return (_leftBound + _rightBound) / 2;
         }
     }
 }

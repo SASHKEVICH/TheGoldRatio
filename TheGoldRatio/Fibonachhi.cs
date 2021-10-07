@@ -39,7 +39,7 @@ namespace TheGoldRatio
         public int FindNumberOfSeries()
         {
             int numberOfSeries = 0;
-            int x = Convert.ToInt32((RightBound - LeftBound) / eps);
+            int x = Convert.ToInt32((_rightBound - _leftBound) / _eps);
 
             while (FibonachhiSeries(numberOfSeries) < x)
             {
@@ -54,42 +54,40 @@ namespace TheGoldRatio
             FibonachhiNumber = FindNumberOfSeries();
             int neededNumberOfSeries = FibonachhiNumber;
             int counter = 0;
-            double step = (RightBound - LeftBound) / FibonachhiSeries(neededNumberOfSeries);
+            double step = (_rightBound - _leftBound) / FibonachhiSeries(neededNumberOfSeries);
 
-            double x1 = LeftBound + step * FibonachhiSeries(neededNumberOfSeries + 2);
-            double x2 = RightBound - step * FibonachhiSeries(neededNumberOfSeries + 2);
+            double x1 = _leftBound + step * FibonachhiSeries(neededNumberOfSeries + 2);
+            double x2 = _rightBound - step * FibonachhiSeries(neededNumberOfSeries + 2);
 
             double y1 = func(x1);
             double y2 = func(x2);
 
             while (counter < neededNumberOfSeries)
             {
-                CounterIteration++;
                 counter++;
 
                 if (y1 < y2)
                 {
-                    RightBound = x2;
+                    _rightBound = x2;
                     x2 = x1;
                     y2 = y1;
-                    x1 = LeftBound + step * FibonachhiSeries(neededNumberOfSeries - counter + 2);
+                    x1 = _leftBound + step * FibonachhiSeries(neededNumberOfSeries - counter + 2);
                     y1 = func(x1);
                 }
                 else
                 {
-                    LeftBound = x1;
+                    _leftBound = x1;
                     x1 = x2;
                     y1 = y2;
-                    x2 = RightBound - step * FibonachhiSeries(neededNumberOfSeries - counter + 2);
+                    x2 = _rightBound - step * FibonachhiSeries(neededNumberOfSeries - counter + 2);
                     y2 = func(x2);
                 }
             }
 
-            return (LeftBound + RightBound) / 2.0;
+            return (_leftBound + _rightBound) / 2.0;
         }
 
         public Fibonachhi(double LeftBound, double RightBound, double eps)
-            : base(LeftBound, RightBound, eps)
         {
             
         }

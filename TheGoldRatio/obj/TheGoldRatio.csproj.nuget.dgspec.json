@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {}
+    "/Users/sashkevich/Программирование/C#/TheGoldRatio/TheGoldRatio/TheGoldRatio/TheGoldRatio.csproj": {}
   },
   "projects": {
-    "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj": {
+    "/Users/sashkevich/Программирование/C#/TheGoldRatio/TheGoldRatio/TheGoldRatio/TheGoldRatio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
+        "projectUniqueName": "/Users/sashkevich/Программирование/C#/TheGoldRatio/TheGoldRatio/TheGoldRatio/TheGoldRatio.csproj",
         "projectName": "TheGoldRatio",
-        "projectPath": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio.csproj",
-        "packagesPath": "C:\\Users\\apple\\.nuget\\packages\\",
-        "outputPath": "G:\\Code\\C#\\TheGoldRatio\\TheGoldRatio\\TheGoldRatio\\obj\\",
+        "projectPath": "/Users/sashkevich/Программирование/C#/TheGoldRatio/TheGoldRatio/TheGoldRatio/TheGoldRatio.csproj",
+        "packagesPath": "/Users/sashkevich/.nuget/packages/",
+        "outputPath": "/Users/sashkevich/Программирование/C#/TheGoldRatio/TheGoldRatio/TheGoldRatio/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apple\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/sashkevich/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
